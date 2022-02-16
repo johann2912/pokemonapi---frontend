@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+#pokemon-title {
+  width: 550px;
+  height: 190px;
 }
 
 .container-app {
@@ -11,5 +16,28 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url("https://www.mastekhw.com/wp-content/uploads/2020/09/PMC001_0009_%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-10.png");
+  background: url("https://www.mastekhw.com/wp-content/uploads/2020/09/PMC001_0009_%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-10.png") no-repeat center center/cover;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.pokemon-container {
+  width: 90%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background: #fff;
+}
+
+.list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  overflow-y: scroll;
+  gap: 1rem;
 }
