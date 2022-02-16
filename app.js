@@ -19,13 +19,16 @@ const handleGetId = (element) => {
 };
 
 const printDataPokemonsName = (data) => {
-  let pokemonesContainer = "";
+  let pokemonesContainer = [];
 
   for (const element of data) {
-    pokemonesContainer += `
-    <h1 id=${element.url} onclick="handleGetId(${element})" >${element.name}</h1>
-    
-    `;
+    // pokemonesContainer += `
+    // <h1 id=${element.url} onclick="handleGetId(${element})" >${element.name}</h1>
+
+    // `;
+    const h1 = document.createElement("h1", {});
+
+    pokemonesContainer;
   }
 
   pokemonDataContainer.innerHTML = pokemonesContainer;
