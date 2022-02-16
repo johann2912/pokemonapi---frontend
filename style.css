@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("https://www.mastekhw.com/wp-content/uploads/2020/09/PMC001_0009_%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-10.png");
+}
