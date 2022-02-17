@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Poke-API</title>
-</head>
-<body>
-    <div class="container-app" >
-        <img id="pokemon-title" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="fsdfsdfs">
-        <div class="pokemon-container">
-          
-           <div class="list-container" id="list_data_container" >
-              
-           </div>
-            
-            <div class="cards-container">
-               <div class="cards-father" >
-                   <div class="card">
+    <audio id="pokeaudio" autoplay loop>
+      <source src="./assets/audiopoke.mp3" type="audio/mpeg" />
+      <source src="./assets/audiopoke.ogv" type="audio/ogg" />
+      <h1></h1>
+    </audio>
+  </head>
+  <body>
+    <div class="container-app">
+      <img
+        id="pokemon-title"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+        alt="fsdfsdfs"
+      />
+      <div class="pokemon-container">
+        <div class="list-container" id="list_data_container"></div>
 
-                        <div class="card-front">
-                            <div class="bg"></div>
-                            <div class="body-card-front">
-                                <h1>Lorem asd jsadbe asmdbyebwj  asbc cudq d jksbdusdq djqwjqwud weicmec asc</h1>
-                            </div>
-                        </div>
-
-                        <div class="card-back">
-                            <div class="body-card-back">
-                                <h1>aqui va una img</h1>
-                            </div>
-                        </div>
-
-                   </div>
-               </div>
+        <div class="card-container">
+          <div class="card-item-container">
+            <div class="front-front">
+              <img id="poke_img"/>
             </div>
+            <div class="card-back">
+              <h1 class="back-text">fgddfcfgcfgc</h1>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

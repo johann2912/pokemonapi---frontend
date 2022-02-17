@@ -23,11 +23,15 @@
 
 .pokemon-container {
   width: 90%;
-  height: 70vh;
+  height: 60vh;
+  padding: 38px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background: #fff;
+  background: #21618c;
+  border-radius: 6px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1x 1px;
 }
 
 .list-container {
@@ -42,76 +46,80 @@
   gap: 1rem;
 }
 
-.cards-container {
-  max-width: 1200px;
-  margin: auto;
-  background: red;
-  margin-top: 100px;
-  perspective: 1000px;
+.list-container::-webkit-scrollbar {
+  width: 6px;
+}
+.list-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgb(8, 206, 228);
 }
 
-.cards-father {
-  /*margin: 20px;*/
-}
-
-.cards-father:hover .card{
-  transform: rotateY(180deg);
-}
-
-.card {
-  background: purple;
-  transform-style: preserve-3d;
-  transition: all 800ms;
-}
-
-.card-back {
-  background-size: cover;
-  background-position: center;
-}
-
-.card-front,
-.card-back {
+.list_item {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  border-radius: 20px;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
-.body-card-front {
-  *width: 100%;
-  *height: 100%;
   text-align: center;
-  *padding: 10px;
-  *display: flex;
-  justify-content: center;
-  *align-items: center;
-  background: black;
+  font-size: 14px;
+  background: #f1c40f;
+  padding: 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
-.bg{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+.list_item:hover {
+  background: rgb(8, 206, 228);
 }
 
-.body-card-back {
+.card-container {
   width: 100%;
   height: 100%;
-  text-align: center;
-  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.selected {
+  background: rgb(8, 206, 228);
+}
+
+.card-item-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+.front-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  transition: all 0.9s;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.front-front*/
+.img {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  *background: url("https://w0.peakpx.com/wallpaper/654/194/HD-wallpaper-pokeball-black-go-pikachu-pokemon-squirtle-white-xy.jpg") no-repeat center center/cover;
+  z-index: 10;
+}
+.front-front:hover {
+  transform: rotateY(180deg);
+  opacity: 0;
 }
